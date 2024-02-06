@@ -54,6 +54,43 @@ header {
   padding: 40px;
 
   h1 {
-    margin: 0;
+    margin-bottom: 40px;
   }
+}
+
+.card {
+  border: 1px solid #f3f3f3;
+  padding: 30px;
+  width: 220px;
+  border-radius: 40px;
+
+  h5{
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .pricebutt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .price{
+      display: flex;
+      flex-direction: column;
+      p{
+        margin: 0;
+      }
+    }
+  }
+}
+
+.button{
+  box-sizing: border-box;
+
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  border-radius: 8px;
+
+  height: 32px;
+  width: 32px;
+  cursor:pointer;
 }
