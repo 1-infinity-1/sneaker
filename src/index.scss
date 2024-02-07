@@ -56,6 +56,10 @@ header {
   h1 {
     margin-bottom: 40px;
   }
+
+  .Sneakers{
+    display: flex;
+  }
 }
 
 .card {
@@ -63,12 +67,12 @@ header {
   padding: 30px;
   width: 220px;
   border-radius: 40px;
+  margin: 30px;
 
   h5{
     font-weight: 400;
     font-size: 14px;
   }
-
   .pricebutt{
     display: flex;
     justify-content: space-between;
@@ -78,6 +82,12 @@ header {
       flex-direction: column;
       p{
         margin: 0;
+        font-size: 13px;
+        opacity: 0.5;
+        text-transform: uppercase;
+      }
+      b {
+        font-size: 14px;
       }
     }
   }
