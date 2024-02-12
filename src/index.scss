@@ -1,7 +1,9 @@
 body {
   margin: 0;
-  font-family: system-ui;
   background-color: #E7F6FF;
+}
+* {
+  font-family: 'Inter',system-ui;
 }
 
 .wrapper {
@@ -60,6 +62,24 @@ header {
   .Sneakers{
     display: flex;
   }
+  .content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .search-block{
+      border: 1px solid #f3f3f3;
+      border-radius: 10px;
+      padding: 0 15px;
+      input {
+        border: 0;
+        padding: 13px;
+        font-size: 16px;
+        width: 200px;
+      }
+    }
+  }
+  
 }
 
 .card {
@@ -104,3 +124,4 @@ header {
   width: 32px;
   cursor:pointer;
 }
+

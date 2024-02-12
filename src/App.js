@@ -27,7 +27,13 @@ function App() {
                 </div>
             </header>
             <div className="content">
+                <div className = 'content-header'>
                 <h1>Все кроссовки</h1>
+                <div className = 'search-block'>
+                    <img src = '' alt = 'Search' />
+                    <input placeholder="Поиск..." />
+                </div>
+                </div>
                 <div className="Sneakers">
                     <div className="card">
                         <img width = {133} height = {112} src="/image/sneakers/1.png" alt="sneakers"/>
