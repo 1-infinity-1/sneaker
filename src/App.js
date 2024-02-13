@@ -30,7 +30,7 @@ function App() {
                 <div className = 'content-header'>
                 <h1>Все кроссовки</h1>
                 <div className = 'search-block'>
-                    <img src = '' alt = 'Search' />
+                    <img src = '/image/searchIcon.png' alt = 'Search' />
                     <input placeholder="Поиск..." />
                 </div>
                 </div>
