@@ -25,8 +25,11 @@ body {
   z-index: 0.5;
 }
 .drawer{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   position: absolute;
-  width: 385px;
+  width: 420px;
   height: 100%;
   right: 0;
   background: #FFFFFF;
@@ -34,6 +37,10 @@ body {
   padding: 30px;
   h2{
     margin: 0;
+    margin-bottom: 20px;
+  }
+  .Item{
+    flex: 1;
   }
   .cartItem{
     border: 1px solid #f3f3f3;
@@ -42,6 +49,7 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
+    margin-bottom: 20px;
     .cartItemImg{
       width: 70px;
       height: 70px;
@@ -67,7 +75,20 @@ body {
       }
     }
   }
+
 }
+.cartTotalBlockLi{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  div{
+    flex:1;
+    height:1px;
+    border-bottom:1px dashed #dfdfdf;
+  }
+}
+
+
 header {
   display: flex;
   justify-content: space-between;

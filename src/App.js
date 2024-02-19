@@ -5,7 +5,8 @@ function App() {
         <div className="wrapper">
             <div className = "overlay">
                 <div className="drawer">
-                    <h2>Корзина</h2>
+                    <h2 className = "cartHead">Корзина</h2>
+                    <div className = "Item">
                     <div className="cartItem">
                     <img className="cartItemImg" src="/image/sneakers/1.png" alt="Sneakers"/>
                     <div>
@@ -17,6 +18,31 @@ function App() {
                         </b>
                     </div>
                     <img className = "btn_cross" src="/image/btn-cross.svg" alt="cross" />
+                    </div>
+                    <div className="cartItem">
+                    <img className="cartItemImg" src="/image/sneakers/1.png" alt="Sneakers"/>
+                    <div>
+                        <p>
+                            Мужские кроссовки Nike Air Max 270
+                        </p>
+                        <b>
+                            12 999 руб.
+                        </b>
+                    </div>
+                    <img className = "btn_cross" src="/image/btn-cross.svg" alt="cross" />
+                    </div>
+                    </div>
+                    <div className = "cartTotalBlock">
+                        <li className = "cartTotalBlockLi">
+                            <span>Итого:</span> 
+                            <div></div>
+                            <b>21 498 руб.</b>
+                        </li>
+                        <li className = "cartTotalBlockLi">
+                            <span>Налог 5%:</span>
+                            <div></div>
+                            <b>1074 руб.</b>
+                        </li>
                     </div>
                 </div>
             </div>
