@@ -2,8 +2,9 @@ body {
   margin: 0;
   background-color: #E7F6FF;
 }
+
 * {
-  font-family: 'Inter',system-ui;
+  font-family: 'Inter', system-ui;
 }
 
 .wrapper {
@@ -15,16 +16,18 @@ body {
   margin: 50px auto;
   //
 }
-.overlay{
+
+.overlay {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height:100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   z-index: 0.5;
 }
-.drawer{
+
+.drawer {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -35,14 +38,24 @@ body {
   background: #FFFFFF;
   box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  h2{
+
+  .cartHeadBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  h2 {
     margin: 0;
     margin-bottom: 20px;
   }
-  .Item{
+
+  .Item {
     flex: 1;
   }
-  .cartItem{
+
+  .cartItem {
     border: 1px solid #f3f3f3;
     border-radius: 20px;
     overflow: hidden;
@@ -50,7 +63,8 @@ body {
     align-items: center;
     padding: 20px;
     margin-bottom: 20px;
-    .cartItemImg{
+
+    .cartItemImg {
       width: 70px;
       height: 70px;
       background-size: contain;
@@ -58,36 +72,69 @@ body {
       background-repeat: no-repeat;
       margin-right: 10px;
     }
-    p{
-      
+
+    p {
+
       font-size: 16px;
     }
+
     b {
       font-size: 14px;
     }
+  }
+}
 
-    .btn_cross {
-      cursor: pointer;
-      opacity: 0.5;
-      transition: opacity 0.15s easy-in-out;
-      :hover {
-        opacity: 1;
-      }
+.btn_cross {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in-out;
+
+  :hover {
+    opacity: 1;
+  }
+}
+
+.cartTotalBlock {
+  .cartTotalBlockLi {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+
+    div {
+      flex: 1;
+      height: 1px;
+      border-bottom: 1px dashed #dfdfdf;
     }
   }
-
 }
-.cartTotalBlockLi{
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 20px;
-  div{
-    flex:1;
-    height:1px;
-    border-bottom:1px dashed #dfdfdf;
+
+.greenButton {
+  width: 100%;
+  height: 55px;
+  background: #9dd558;
+  border-radius: 18px;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  position: relative;
+
+  img {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+
+  :hover {
+    background: lighten(#9dd558, 5%);
+  }
+
+  :active {
+    background: darken(#9dd558, 5%);
   }
 }
-
 
 header {
   display: flex;
@@ -132,28 +179,31 @@ header {
     margin-bottom: 40px;
   }
 
-  .Sneakers{
+  .Sneakers {
     display: flex;
   }
-  .content-header{
+
+  .content-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
-    .search-block{
+
+    .search-block {
       border: 1px solid #f3f3f3;
       border-radius: 10px;
       padding: 0 15px;
+
       input {
         border: 0;
         padding: 13px;
         font-size: 16px;
         width: 200px;
-        outline:none;
+        outline: none;
       }
     }
   }
-  
+
 }
 
 .card {
@@ -163,23 +213,27 @@ header {
   border-radius: 40px;
   margin: 30px;
 
-  h5{
+  h5 {
     font-weight: 400;
     font-size: 14px;
   }
-  .pricebutt{
+
+  .pricebutt {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .price{
+
+    .price {
       display: flex;
       flex-direction: column;
-      p{
+
+      p {
         margin: 0;
         font-size: 13px;
         opacity: 0.5;
         text-transform: uppercase;
       }
+
       b {
         font-size: 14px;
       }
@@ -187,7 +241,7 @@ header {
   }
 }
 
-.button{
+.button {
   box-sizing: border-box;
 
   background: #FFFFFF;
@@ -196,6 +250,6 @@ header {
 
   height: 32px;
   width: 32px;
-  cursor:pointer;
+  cursor: pointer;
 }
 

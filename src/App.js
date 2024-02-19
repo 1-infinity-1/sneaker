@@ -3,47 +3,53 @@ import './App.scss';
 function App() {
     return (
         <div className="wrapper">
-            <div className = "overlay">
+            <div className="overlay">
                 <div className="drawer">
-                    <h2 className = "cartHead">Корзина</h2>
-                    <div className = "Item">
-                    <div className="cartItem">
-                    <img className="cartItemImg" src="/image/sneakers/1.png" alt="Sneakers"/>
-                    <div>
-                        <p>
-                            Мужские кроссовки Nike Air Max 270
-                        </p>
-                        <b>
-                            12 999 руб.
-                        </b>
+                    <div className="cartHeadBtn">
+                        <h2 className="cartHead">Корзина</h2>
+                        <img className="btn_cross" src="/image/btn-cross.svg" alt="cross"/>
                     </div>
-                    <img className = "btn_cross" src="/image/btn-cross.svg" alt="cross" />
+                    <div className="Item">
+                        <div className="cartItem">
+                            <img className="cartItemImg" src="/image/sneakers/1.png" alt="Sneakers"/>
+                            <div>
+                                <p>
+                                    Мужские кроссовки Nike Air Max 270
+                                </p>
+                                <b>
+                                    12 999 руб.
+                                </b>
+                            </div>
+                            <img className="btn_cross" src="/image/btn-cross.svg" alt="cross"/>
+                        </div>
+                        <div className="cartItem">
+                            <img className="cartItemImg" src="/image/sneakers/1.png" alt="Sneakers"/>
+                            <div>
+                                <p>
+                                    Мужские кроссовки Nike Air Max 270
+                                </p>
+                                <b>
+                                    12 999 руб.
+                                </b>
+                            </div>
+                            <img className="btn_cross" src="/image/btn-cross.svg" alt="cross"/>
+                        </div>
                     </div>
-                    <div className="cartItem">
-                    <img className="cartItemImg" src="/image/sneakers/1.png" alt="Sneakers"/>
-                    <div>
-                        <p>
-                            Мужские кроссовки Nike Air Max 270
-                        </p>
-                        <b>
-                            12 999 руб.
-                        </b>
-                    </div>
-                    <img className = "btn_cross" src="/image/btn-cross.svg" alt="cross" />
-                    </div>
-                    </div>
-                    <div className = "cartTotalBlock">
-                        <li className = "cartTotalBlockLi">
-                            <span>Итого:</span> 
+                    <div className="cartTotalBlock">
+                        <li className="cartTotalBlockLi">
+                            <span>Итого:</span>
                             <div></div>
                             <b>21 498 руб.</b>
                         </li>
-                        <li className = "cartTotalBlockLi">
+                        <li className="cartTotalBlockLi">
                             <span>Налог 5%:</span>
                             <div></div>
                             <b>1074 руб.</b>
                         </li>
+                        <button className="greenButton">Оформить заказ <img src="/image/Arrow.svg" alt="Arrow"/>
+                        </button>
                     </div>
+
                 </div>
             </div>
             <header>
@@ -70,16 +76,16 @@ function App() {
                 </div>
             </header>
             <div className="content">
-                <div className = 'content-header'>
-                <h1>Все кроссовки</h1>
-                <div className = 'search-block'>
-                    <img src = '/image/searchIcon.png' alt = 'Search' />
-                    <input placeholder="Поиск..." />
-                </div>
+                <div className='content-header'>
+                    <h1>Все кроссовки</h1>
+                    <div className='search-block'>
+                        <img src='/image/searchIcon.png' alt='Search'/>
+                        <input placeholder="Поиск..."/>
+                    </div>
                 </div>
                 <div className="Sneakers">
                     <div className="card">
-                        <img width = {133} height = {112} src="/image/sneakers/1.png" alt="sneakers"/>
+                        <img width={133} height={112} src="/image/sneakers/1.png" alt="sneakers"/>
                         <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
                         <div className="pricebutt">
                             <div className="price">
@@ -92,7 +98,7 @@ function App() {
                         </div>
                     </div>
                     <div className="card">
-                        <img width = {133} height = {112} src="/image/sneakers/1.png" alt="sneakers"/>
+                        <img width={133} height={112} src="/image/sneakers/1.png" alt="sneakers"/>
                         <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
                         <div className="pricebutt">
                             <div className="price">
@@ -105,7 +111,7 @@ function App() {
                         </div>
                     </div>
                     <div className="card">
-                        <img width = {133} height = {112} src="/image/sneakers/1.png" alt="sneakers"/>
+                        <img width={133} height={112} src="/image/sneakers/1.png" alt="sneakers"/>
                         <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
                         <div className="pricebutt">
                             <div className="price">
