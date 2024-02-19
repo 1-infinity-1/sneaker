@@ -3,6 +3,23 @@ import './App.scss';
 function App() {
     return (
         <div className="wrapper">
+            <div className = "overlay">
+                <div className="drawer">
+                    <h2>Корзина</h2>
+                    <div className="cartItem">
+                    <img className="cartItemImg" src="/image/sneakers/1.png" alt="Sneakers"/>
+                    <div>
+                        <p>
+                            Мужские кроссовки Nike Air Max 270
+                        </p>
+                        <b>
+                            12 999 руб.
+                        </b>
+                    </div>
+                    <img className = "btn_cross" src="/image/btn-cross.svg" alt="cross" />
+                    </div>
+                </div>
+            </div>
             <header>
                 <div className="headerLeft">
                     <img width={40} height={40} src="/image/logo.png"/>
