@@ -3,13 +3,13 @@ import './App.scss';
 function App() {
     return (
         <div className="wrapper">
-            <div className="overlay">
+            <div style = {{display: 'none'}} className="overlay">
                 <div className="drawer">
                     <div className="cartHeadBtn">
                         <h2 className="cartHead">Корзина</h2>
                         <img className="btn_cross" src="/image/btn-cross.svg" alt="cross"/>
                     </div>
-                    <div className="Item">
+                    <div className="item">
                         <div className="cartItem">
                             <img className="cartItemImg" src="/image/sneakers/1.png" alt="Sneakers"/>
                             <div>

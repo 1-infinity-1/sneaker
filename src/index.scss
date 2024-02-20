@@ -51,8 +51,10 @@ body {
     margin: 0;
   }
 
-  .Item {
+  .item {
     flex: 1;
+    overflow: auto;
+    margin-bottom: 40px;
   }
 
   .cartItem {
@@ -128,13 +130,13 @@ body {
     top: 20px;
   }
 
-  :hover {
-    background: lighten(#9dd558, 5%);
-  }
+  // :hover {
+  //   background: lighten(#9dd558, 5%);
+  // }
 
-  :active {
-    background: darken(#9dd558, 5%);
-  }
+  // :active {
+  //   background: darken(#9dd558, 5%);
+  // }
 }
 
 header {
@@ -231,7 +233,6 @@ header {
       p {
         margin: 0;
         font-size: 13px;
-        opacity: 0.5;
         text-transform: uppercase;
       }
 
