@@ -2,7 +2,7 @@ import './App.scss';
 import Drawer from "./components/Drawer";
 import Header from "./components/Header";
 import Card from "./components/Card";
-const arr = [
+const arrCard = [
     {key: 0, image: "/image/sneakers/1.png", name: "Мужские Кроссовки Nike Blazer Mid Suede", price: "12 999 руб."},
     {key: 1, image: "/image/sneakers/2.png", name: "Мужские Кроссовки Nike Air Max 270", price: "12 999 руб."},
     {key: 2, image: "/image/sneakers/3.png", name: "Мужские Кроссовки Nike Blazer Mid Suede", price: "8 999 руб."},
@@ -23,7 +23,7 @@ function App() {
                     </div>
                 </div>
                 <div className="Sneakers">
-                    {arr.map((obj) => (<Card key = {obj.key} image = {obj.image} name = {obj.name} price = {obj.price}/>))}
+                    {arrCard.map((obj) => (<Card key = {obj.key} image = {obj.image} name = {obj.name} price = {obj.price}/>))}
                 </div>
             </div>
         </div>

@@ -1,0 +1,38 @@
+.cartItem {
+    border: 1px solid #f3f3f3;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    grid-gap: 15px;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    .cartItemImg {
+      width: 70px;
+      height: 70px;
+      background-size: contain;
+      background-position: 0 10px;
+      background-repeat: no-repeat;
+      margin-right: 10px;
+    }
+
+    p {
+
+      font-size: 16px;
+    }
+
+    b {
+      font-size: 14px;
+    }
+}
+
+.btn_cross {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.15s ease-in-out;
+  
+    :hover {
+      opacity: 1;
+    }
+  }
